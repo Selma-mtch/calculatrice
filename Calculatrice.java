@@ -6,6 +6,7 @@ public class Calculatrice
         Expression trois= new Nombre(3);
         Expression dixSept= new Nombre(17);
         Expression zero= new Nombre(0);
+        String ch = "Erreur";
         
         Expression s= new Soustraction(dixSept,deux);
         System.out.println(s);  //retourne (17.0 - 2)
@@ -23,6 +24,9 @@ public class Calculatrice
         System.out.println(a2+"="+a2.valeur());
 
         Expression de=new Division(s,zero);
-        System.out.println(de+"="+de.valeur()); //retourne "Division par zéro impossible!" et le message d'erreuer
+        System.out.println(de+"="+de.valeur()); //retourne "Division par zéro impossible!" et le message d'erreur
+
+        
+
     }
 }
